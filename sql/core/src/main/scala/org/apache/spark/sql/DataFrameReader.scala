@@ -157,6 +157,8 @@ class DataFrameReader private[sql](sparkSession: SparkSession) extends Logging {
   def option(key: String, value: Double): DataFrameReader = option(key, value.toString)
 
   /**
+   * Viktor: Guys, Vivek, Dan - let's add some typesafe analogue for this function below? Let's checkout this project :).
+   *
    * (Scala-specific) Adds input options for the underlying data source.
    *
    * All options are maintained in a case-insensitive way in terms of key names.
